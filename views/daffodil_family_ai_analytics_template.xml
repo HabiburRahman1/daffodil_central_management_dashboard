@@ -1,0 +1,203 @@
+<odoo>
+    <template id="ai_analytics" name="Central Management Dashboard">
+        <t t-call="website.layout">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+            <link rel="stylesheet" type="text/css" href="/daffodil_central_management_dashboard/static/src/css/card_hover.css" />
+            <div class="col-md-12">
+
+                <br />
+                <br />
+
+                <div class="row">
+
+                    <div class="col-sm-1">
+                        <h2>
+                            <i onclick="goBack()" class="fas fa-arrow-alt-circle-left"/>
+                        </h2>
+                    </div>
+
+                    <div class="col-sm-4 offset-3">
+                        <h1 class="text-center">
+                            Analytical Dashboard
+                        </h1>
+                    </div>
+
+                    <div class="col-sm-1">
+                        <h1>
+                            <button onClick="window.location.reload()" type="button" class="btn btn-primary">
+                                <i class="fa fa-refresh"/>
+                            </button>
+                        </h1>
+                    </div>
+
+                    <div class="col-sm-1 offset-2">
+                        <h2 style="position: relative;z-index: 99;float: right;">
+                            <i onclick="goForward()" class="fas fa-arrow-alt-circle-right"/>
+                        </h2>
+                    </div>
+
+                </div>
+
+
+
+
+                <script>
+                    function goBack() {
+                      window.history.back();
+                    }
+                    function goForward() {
+                      window.history.forward();
+                    }
+                </script>
+
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6">
+
+                        <div class="card bg-white" >
+                            <div class="card-statistic-3 p-4">
+
+                                <div class="mb-4">
+                                    <h3 class="card-title mb-0">
+                                        <span>
+                                            Sales and Admission
+                                        </span>
+
+
+                                    </h3>
+                                </div>
+                                <hr />
+                                <div class="row align-items-center mb-2 d-flex">
+
+                                    <div class="col-12">
+                                        <h5 class="d-flex align-items-center mb-0">
+                                            In this section we will analyse sales and admission and also forecast the future sales and admission
+                                        </h5>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+
+                        <div class="card bg-white" >
+                            <div class="card-statistic-3 p-4">
+
+                                <div class="mb-4">
+                                    <h3 class="card-title mb-0">
+                                        <span>
+                                            Growth Analysis
+                                        </span>
+
+
+                                    </h3>
+                                </div>
+                                <hr />
+                                <div class="row align-items-center mb-2 d-flex">
+
+                                    <div class="col-12">
+                                        <h5 class="d-flex align-items-center mb-0">
+                                            In this section we will analyse Revenue and Loss through accounts and admission
+                                        </h5>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+
+                        <div class="card bg-white" >
+                            <div class="card-statistic-3 p-4">
+
+                                <div class="mb-4">
+                                    <h3 class="card-title mb-0">
+                                        <span>
+                                            Lead and Opportunity analysis
+                                        </span>
+
+
+                                    </h3>
+                                </div>
+                                <hr />
+                                <div class="row align-items-center mb-2 d-flex">
+
+                                    <div class="col-12">
+                                        <h5 class="d-flex align-items-center mb-0">
+                                            In this section we will analyse lead and pipeline and guide how to make it opportunity
+                                        </h5>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+
+                        <div class="card bg-white" >
+                            <div class="card-statistic-3 p-4">
+
+                                <div class="mb-4">
+                                    <h3 class="card-title mb-0">
+                                        <span>
+                                            Risk Factor Analysis
+                                        </span>
+
+
+                                    </h3>
+                                </div>
+                                <hr />
+                                <div class="row align-items-center mb-2 d-flex">
+
+                                    <div class="col-12">
+                                        <h5 class="d-flex align-items-center mb-0">
+                                            In this section we will analyse risk factors of a company and how to solve
+                                        </h5>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-sm-6">
+
+                   <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Black_Man_Working_at_his_Desk_Cartoon_Vector.svg/1200px-Black_Man_Working_at_his_Desk_Cartoon_Vector.svg.png" />
+
+                </div>
+                <div class="col-sm-6">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+
+
+                    <h1>
+                        ------------ Work is Under Process -------------
+
+                    </h1>
+                </div>
+
+            </div>
+        </t>
+    </template>
+</odoo>

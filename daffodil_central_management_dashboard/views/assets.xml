@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="web_assets_frontend" name="Web Assets Frontend" inherit_id="web.assets_frontend">
+        <xpath expr="//script[last()]" position="after">
+
+            <link rel="stylesheet" href="/daffodil_central_management_dashboard/static/src/css/main.css"/>
+
+        </xpath>
+    </template>
+
+</odoo>

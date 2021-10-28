@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record model="ir.module.category" id="module_daffodil_family_concerns">
+         <field name="name">Daffodil Family Central Management System</field>
+         <field name="description">Category For Daffodil Family Central Management System</field>
+         <field name="sequence">1</field>
+     </record>
+
+    <record model="res.groups" id="module_daffodil_family_dashboard">
+        <field name="name">Daffodil Family Central Management System</field>
+        <field name="category_id" ref="module_daffodil_family_concerns"/>
+     </record>
+
+</odoo>

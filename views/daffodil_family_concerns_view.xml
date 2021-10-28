@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Tree View -->
+        <record id="daffodil_family_concerns_tree_view" model="ir.ui.view">
+            <field name="name">daffodil.family.concerns.tree.view</field>
+            <field name="model">daffodil.family.concerns</field>
+            <field name="priority" eval="7" />
+            <field name="arch" type="xml">
+                <tree string="Daffodil Family Concerns">
+                    <!-- <field name="code"/> -->
+                    <field name="name" />
+                    <field name="domain" />
+                    <field name="logo" />
+                    <field name="api_token" />
+                    <field name="api_key" />
+                    <field name="extension" />
+                    <field name="database_name" />
+                    <field name="admin_user_email" />
+                    <field name="admin_user_password" password="True" />
+
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- Form View -->
+        <record id="daffodil_family_concerns_form_view" model="ir.ui.view">
+            <field name="name">daffodil.family.concerns.form.view</field>
+            <field name="model">daffodil.family.concerns</field>
+            <field name="priority" eval="7" />
+            <field name="arch" type="xml">
+                <form string="Daffodil Family Concerns Form">
+                    <sheet string="Daffodil Family Concerns">
+
+
+                        <h3>
+                            Daffodil Family Concerns
+                        </h3>
+
+                        <group>
+                            <field name="name" />
+                            <field name="domain" />
+                            <field name="logo" />
+                            <field name="api_token" />
+                            <field name="api_key" />
+                            <field name="extension" />
+                            <field name="database_name" />
+                        </group>
+
+                        <h3>
+                            Admin User Information
+                        </h3>
+
+                        <group>
+                            <field name="admin_user_email" />
+                            <field name="admin_user_password" password="True" />
+                        </group>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- Actions -->
+        <record id="action_daffodil_family_concerns" model="ir.actions.act_window">
+            <field name="name">Daffodil Family Concerns</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">daffodil.family.concerns</field>
+            <field name="domain">[]</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="view_id" ref="daffodil_family_concerns_tree_view" />
+            <field name="help" type="html">
+                <p>
+                    Insert Concerns
+                </p>
+            </field>
+        </record>
+<!--        <record model="ir.actions.act_url" id="action_daffodil_family_concerns">-->
+<!--          <field name="name">Daffodil Family Concerns</field>-->
+<!--          <field name="url">https://management.df.daffodil.family</field>-->
+<!--          <field name="target">new</field>-->
+<!--        </record>-->
+
+    </data>
+</odoo>

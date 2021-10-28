@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Top Menu -->
+        <menuitem name="Daffodil Family Dashboard"
+            id="menu_action_daffodil_family_dashboard"
+            web_icon="daffodil_central_management_dashboard,static/src/img/icon.png"
+            sequence="1" />
+
+
+        <!-- Menu -->
+        <menuitem name="Concerns"
+            id="menu_action_daffodil_family_concerns"
+            action="action_daffodil_family_concerns"
+            parent="menu_action_daffodil_family_dashboard"
+            sequence="1" />
+
+    </data>
+</odoo>

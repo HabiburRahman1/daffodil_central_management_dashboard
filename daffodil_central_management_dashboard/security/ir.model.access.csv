@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_daffodil_family_concerns,daffodil_family_concerns,model_daffodil_family_concerns,base.group_user,1,1,1,1
